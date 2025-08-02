@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Encurtador de URL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Encurtador de URL</h1>
+    <input type="text" id="longUrl" placeholder="Cole sua URL longa aqui">
+    <input type="datetime-local" id="expiration" placeholder="Data de expiração (opcional)">
+    <button onclick="encurtarUrl()">Encurtar</button>
+    
+    <div id="resultado" style="display: none;">
+      <p>Sua URL curta:</p>
+      <input type="text" id="shortUrl" readonly>
+      <button onclick="copiarUrl()">Copiar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
